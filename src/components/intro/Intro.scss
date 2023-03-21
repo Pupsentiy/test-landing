@@ -5,14 +5,26 @@
     rgba(255, 255, 255, 0) 86.46%
   );
   padding: 75px 15px;
-  @media (max-width: 320px) {
+  @media (max-width: 566px) {
     background: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 44px 15px;
   }
+  .wrapper__border{
+    @media (max-width: 566px) {
+      display: none;
+    }
+  }
+
   .main-food {
     display: flex;
     flex-direction: column;
     margin-top: 69px;
     position: relative;
+    @media (max-width: 566px) {
+      margin-top: 0px;
+    }
     .bubble-left {
       width: 442.06px;
       height: 447.48px;
@@ -51,16 +63,16 @@
       .desc {
         text-align: center;
         max-width: 178px;
-        @media (max-width: 556px) {
-          max-width: 140px;
+        @media (max-width: 566px) {
+          display: none;
         }
       }
       .first-row-item {
         width: 64px;
         height: 71px;
-        @media (max-width: 556px) {
-          width: 50px;
-          height: 50px;
+        filter: drop-shadow(4px 4px 8px #A6ABBD);
+        @media (max-width: 566px) {
+          display: none;
         }
       }
 

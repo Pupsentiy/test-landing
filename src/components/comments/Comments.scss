@@ -55,15 +55,24 @@
       }
 
       .quoTesGreyL{
-        position: absolute;
-        top: 20px;
-        left: 15px;
+        display: none;
+        @media (max-width: 320px) {
+          display: block;
+          position: absolute;
+          top: 20px;
+          left: 15px;
+        }
+
       }
 
       .quoTesGreyR{
-        position: absolute;
-        top: 20px;
-        right: 15px;
+        display: none;
+        @media (max-width: 320px) {
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 15px;
+        }
       }
       .avatar {
         filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.5));

@@ -27,13 +27,16 @@ const Comments: FC = () => {
               }
               key={i}
             >
-                <img className='quoTesGreyL' src={quoTesGreyL} alt="quoTesGreyL"/>
+                {item.id === 1 &&
+                    <img className='quoTesGreyL' src={quoTesGreyL} alt="quoTesGreyL"/>
+                }
               <img
                 className={item.id === 1 ? "avatar" : "small-avatar"}
                 src={item.img}
                 alt="avatar"
               />
-                <img className='quoTesGreyR'  src={quoTesGreyR} alt="quoTesGreyR"/>
+                {item.id === 1 &&
+                <img className='quoTesGreyR'  src={quoTesGreyR} alt="quoTesGreyR"/>}
               {item.id === 1 && (
                 <img className="quoteL" src={quotesL} alt="quotesL" />
               )}
