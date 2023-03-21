@@ -1,0 +1,12 @@
+.bottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+  @media (max-width: 320px) {
+    flex-direction: column-reverse;
+  }
+}
