@@ -1,5 +1,4 @@
-
-.swiper{
+.swiper {
   display: none;
   overflow: hidden;
   position: relative;
@@ -9,7 +8,11 @@
   }
   .swiper-pagination {
     margin-top: 63px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: auto;
     width: auto;
@@ -17,7 +20,7 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: #E7EBF0;;
+      background: #e7ebf0;
       margin: 5px;
       cursor: pointer;
     }
@@ -25,7 +28,7 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: #A6ABBD;
+      background: #a6abbd;
       margin: 5px;
     }
   }
@@ -48,6 +51,8 @@
       right: 69%;
     }
     &:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
       transform: scale(1.1);
     }
   }
@@ -69,29 +74,42 @@
       left: 69%;
     }
     &:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
       transform: scale(1.1);
     }
   }
 
-  .swiper-wrapper{
+  .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
 
-
-
-    .swiper-slide{
+    .swiper-slide {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center;
+      -ms-flex-negative: 0;
       flex-shrink: 0;
-      img{
+      img {
         width: 64px;
         height: 71.5px;
-        filter: drop-shadow(4px 4px 8px #A6ABBD);
+        -webkit-filter: drop-shadow(4px 4px 8px #a6abbd);
+        filter: drop-shadow(4px 4px 8px #a6abbd);
         margin-bottom: 22px;
       }
-      .desc{
+      .desc {
         text-align: center;
         font-style: normal;
         font-weight: 400;
@@ -99,7 +117,6 @@
         line-height: 18px;
         max-width: 176px;
       }
-
     }
   }
 }

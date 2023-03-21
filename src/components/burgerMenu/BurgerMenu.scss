@@ -6,7 +6,11 @@
   top: 0;
   right: 0;
   z-index: 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 
   .close {
@@ -24,8 +28,11 @@
     right: 15px;
     top: 15px;
     cursor: pointer;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
   }
 

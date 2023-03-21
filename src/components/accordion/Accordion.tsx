@@ -5,7 +5,7 @@ import { accordionData } from "../../core/constants/constants";
 import "./Accordion.scss";
 const Accordion: FC = () => {
   const [id, setId] = useState<number>(0);
-  
+
   const getIdAccordion = (num: number) => {
     if (num === id) {
       setId(0);

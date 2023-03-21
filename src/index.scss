@@ -1,6 +1,7 @@
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -39,11 +40,13 @@ body {
   margin: 0px;
   padding: 0px;
   height: 100%;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 a {
   -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 
@@ -54,7 +57,11 @@ a {
 }
 
 .wrapper__border {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 22px;
   .border {

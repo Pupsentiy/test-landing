@@ -10,9 +10,12 @@ import acc2 from "../../assets/img/acc2.svg";
 import acc3 from "../../assets/img/acc3.svg";
 import acc4 from "../../assets/img/acc4.svg";
 import acc5 from "../../assets/img/acc5.svg";
-export const navItem = ["NavItem1", "NavItem2", "NavItem3"];
 
-export const introItemRowFirst = [
+import { TAccordionData, TCommentsData, TIntroItemRow } from "../types/types";
+
+export const navItem: string[] = ["NavItem1", "NavItem2", "NavItem3"];
+
+export const introItemRowFirst: TIntroItemRow[] = [
   {
     id: 1,
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -25,7 +28,7 @@ export const introItemRowFirst = [
   },
 ];
 
-export const introItemRowTwo = [
+export const introItemRowTwo: TIntroItemRow[] = [
   {
     id: 1,
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -39,7 +42,7 @@ export const introItemRowTwo = [
   },
 ];
 
-export const introItemRowThree = [
+export const introItemRowThree: TIntroItemRow[] = [
   {
     id: 1,
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
@@ -52,7 +55,7 @@ export const introItemRowThree = [
   },
 ];
 
-export const commentsData = [
+export const commentsData: TCommentsData[] = [
   {
     id: 1,
     img: avatar,
@@ -83,7 +86,7 @@ export const commentsData = [
   },
 ];
 
-export const accordionData = [
+export const accordionData: TAccordionData[] = [
   {
     id: 1,
     img: acc1,

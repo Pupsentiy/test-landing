@@ -9,8 +9,9 @@ import "./BurgerMenu.scss";
 
 const BurgerMenu: FC<TBurgerMenu> = ({ setActiveBurger }) => {
   const [toggle, setToggle] = useState<string>("");
-  const [toggleClassCloseBtn, setToggleClassCloseBtn] = useState(false);
-  
+  const [toggleClassCloseBtn, setToggleClassCloseBtn] =
+    useState<boolean>(false);
+
   const getLinkData = (itemName: string) => {
     setToggle(itemName);
   };

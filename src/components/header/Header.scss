@@ -4,12 +4,22 @@
     padding: 20px 22px;
   }
   @media (max-width: 320px) {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   .logo__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-family: "Roboto";
     font-style: italic;
@@ -19,13 +29,18 @@
     color: #a6abbd;
     @media (max-width: 768px) {
       font-size: 35px;
+      margin-right: 10px;
     }
     @media (max-width: 320px) {
       font-size: 33px;
     }
     .wrapper__img-logo {
       position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       .vector {
         margin-left: 8px;
@@ -61,12 +76,15 @@
       display: block;
       margin-left: auto;
     }
-    @media (max-width: 321px) {
+    @media (max-width: 330px) {
       display: none;
     }
     &:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
       transform: scale(1.1);
       -webkit-transition: all 0.25s ease;
+      -o-transition: all 0.25s ease;
       transition: all 0.25s ease;
     }
   }
@@ -81,7 +99,11 @@
       display: block;
     }
     .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       .menu__item {
         margin-right: 94px;
@@ -106,6 +128,7 @@
         .menu__item-active {
           background: #00c368;
           color: #fff;
+          -webkit-box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.4);
           box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.4);
           border-radius: 8px;
           padding: 4px 24px;
@@ -123,6 +146,7 @@
     line-height: 150%;
     background: #00c368;
     color: #fff;
+    -webkit-box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.4);
     box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.4);
     border-radius: 8px;
     padding: 4px 24px;

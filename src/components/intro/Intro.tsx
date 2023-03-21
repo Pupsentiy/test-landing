@@ -14,7 +14,7 @@ import SwiperComponent from "../SwiperComponent/SwiperComponent";
 const Intro: FC = () => {
   return (
     <section className="intro">
-      <SwiperComponent/>
+      <SwiperComponent />
       <div className="wrapper__border">
         <div className="border"></div>
       </div>
